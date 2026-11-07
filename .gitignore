@@ -1,0 +1,59 @@
+# ---------- Secrets (most important) ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ---------- Python ----------
+venv/
+.venv/
+**/venv/
+**/.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---------- Node / frontend ----------
+node_modules/
+dist/
+build/
+.vite/
+npm-debug.log*
+.env.local
+.env.*.local
+
+# ---------- Deployment tools ----------
+.vercel/
+.fastapicloud/
+
+# ---------- Editors and OS ----------
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ---------- Logs and temp files ----------
+*.log
+*.tmp
+
+# ---------- Test and coverage ----------
+.nyc_output/
+coverage/
+
+# ---------- Database / local data ----------
+*.sqlite
+*.sqlite3
+*.db
+
+# ---------- Python packaging ----------
+pip-wheel-metadata/
+wheels/
+share/python-wheels/

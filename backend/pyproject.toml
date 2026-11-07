@@ -1,0 +1,22 @@
+[project]
+name = "lumera-receptionist-backend"
+version = "1.0.0"
+description = "Luméra Aesthetics AI receptionist API"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.115",
+    "sqlalchemy>=2.0.36",
+    "psycopg[binary]>=3.2",
+    "alembic>=1.14",
+    "pydantic>=2.9",
+    "python-dotenv>=1.0",
+    "groq>=0.13",
+    "tzdata",
+]
+
+[tool.fastapi]
+entrypoint = "app.main:app"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
